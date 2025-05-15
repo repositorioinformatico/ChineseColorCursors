@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Colors with Custom Cursors</title>
+    <style>
+        @layer base, demo;
+        @import url('https://fonts.bunny.net/css?family=noto-sans-sc:400,700');
+        
+        @layer demo {
+            .wrapper {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 2rem;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                backdrop-filter: blur(10px);
+            }
+            
+            p {
+                font-family: 'Noto Sans SC', sans-serif;
+                max-width: 45ch;
+                font-size: clamp(1.2rem, 3vw + 0.5rem, 2rem);
+                line-height: 1.5;
+            }
+            
+            .title {
+                font-weight: 700;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+            
+            .credits {
+                font-family: system-ui;
+                font-size: 0.8rem;
+                text-align: center;
+                margin-top: 2rem;
+            }
+            
+            /* Color cursors */
+            .hong {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FF0000"/></svg>') 16 16, auto;
+            }
+            
+            .huang {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFFF00"/></svg>') 16 16, auto;
+            }
+            
+            .lan {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230000FF"/></svg>') 16 16, auto;
+            }
+            
+            .lv {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%2300FF00"/></svg>') 16 16, auto;
+            }
+            
+            .zi {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23800080"/></svg>') 16 16, auto;
+            }
+            
+            .hei {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23000000"/></svg>') 16 16, auto;
+            }
+            
+            .bai {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFFFFF" stroke="%23000000" stroke-width="1"/></svg>') 16 16, auto;
+            }
+            
+            .cheng {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFA500"/></svg>') 16 16, auto;
+            }
+            
+            .fen {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFC0CB"/></svg>') 16 16, auto;
+            }
+            
+            .hui {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23808080"/></svg>') 16 16, auto;
+            }
+            
+            .jin {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFD700"/></svg>') 16 16, auto;
+            }
+            
+            .yin {
+                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23C0C0C0"/></svg>') 16 16, auto;
+            }
+        }
+        
+        /* general reset and styling - not related to the demo */
+        @layer base {
+            * {
+                box-sizing: border-box;
+            }
+            :root {
+                color-scheme: light dark;
+                --bg-dark: rgb(24, 24, 27);
+                --bg-light: rgb(229, 229, 229);
+                --txt-light: rgb(10, 10, 10);
+                --txt-dark: rgb(245, 245, 245);
+            }
+            body {
+                background-color: light-dark(var(--bg-light), var(--bg-dark));
+                color: light-dark(var(--txt-light), var(--txt-dark));
+                min-height: 100svh;
+                margin: 0;
+                padding: 1rem;
+                font-size: 1rem;
+                font-family: system-ui;
+                line-height: 1.5;
+                display: grid;
+                place-items: center;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">中文颜色词 - Chinese Color Words</h1>
+        <p>
+            在中国传统色彩中，<span class="hong">红色</span>（hóng sè）象征着喜庆和好运。
+        </p>
+        <p>
+            <span class="huang">黄色</span>（huáng sè）在古代是皇帝专用的颜色，代表着权力和尊贵。
+        </p>
+        <p>
+            <span class="lan">蓝色</span>（lán sè）让人联想到广阔的天空和深邃的海洋。
+        </p>
+        <p>
+            <span class="lv">绿色</span>（lǜ sè）象征着生命、和平与希望。
+        </p>
+        <p>
+            <span class="zi">紫色</span>（zǐ sè）在中国古代也是贵族的象征，神秘而高贵。
+        </p>
+        <p>
+            <span class="hei">黑色</span>（hēi sè）代表着严肃与庄重，也与深沉的夜晚相关。
+        </p>
+        <p>
+            <span class="bai">白色</span>（bái sè）在中国传统文化中常与纯洁和悲伤联系在一起。
+        </p>
+        <p>
+            <span class="cheng">橙色</span>（chéng sè）是一种充满活力和温暖的颜色。
+        </p>
+        <p>
+            <span class="fen">粉色</span>（fěn sè）让人感到温柔和浪漫。
+        </p>
+        <p>
+            <span class="hui">灰色</span>（huī sè）是一种中性的颜色，常与平静和沉稳相关。
+        </p>
+        <p>
+            <span class="jin">金色</span>（jīn sè）象征着财富和繁荣，在中国文化中非常重要。
+        </p>
+        <p>
+            <span class="yin">银色</span>（yín sè）与月亮的光辉相关，代表着纯净和高雅。
+        </p>
+        <p class="credits">将鼠标悬停在颜色词上可以看到相应的颜色方块 (Hover over color words to see the corresponding color squares)</p>
+    </div>
+</body>
+</html>
