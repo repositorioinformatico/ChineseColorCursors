@@ -1,10 +1,11 @@
 # Chinese Color Cursors
 
-Pequeña página en HTML para practicar vocabulario de colores en chino. Cada palabra muestra un cursor personalizado con un cuadrito y emojis de números para gamificar la práctica.
+Pequeña página en HTML para practicar vocabulario de colores en chino. Cada palabra de color muestra un cursor personalizado con un cuadrito del tono correspondiente, los números usan emojis en el cursor y al final hay indicaciones con flechas (⬅️⬆️➡️⬇️) para practicar direcciones.
 
 ## Cómo usar
 1. Abre `index.html` en tu navegador.
-2. Pasa el cursor por encima de cada palabra de color para ver el cuadrito con el número-emoji correspondiente.
+2. Pasa el cursor por encima de cada palabra de color para ver el cuadrito del color.
+3. Desliza sobre las palabras de números o direcciones para ver los emojis que representan su significado.
 
 ## GitHub Pages
 Si tienes GitHub Pages activado en el repositorio, la página quedará disponible en:
