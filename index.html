@@ -7,7 +7,7 @@
     <style>
         @layer base, demo;
         @import url('https://fonts.bunny.net/css?family=noto-sans-sc:400,700');
-        
+
         @layer demo {
             .wrapper {
                 max-width: 800px;
@@ -17,77 +17,135 @@
                 border-radius: 8px;
                 backdrop-filter: blur(10px);
             }
-            
+
             p {
                 font-family: 'Noto Sans SC', sans-serif;
                 max-width: 45ch;
                 font-size: clamp(1.2rem, 3vw + 0.5rem, 2rem);
                 line-height: 1.5;
             }
-            
+
             .title {
                 font-weight: 700;
                 margin-bottom: 2rem;
                 text-align: center;
             }
-            
+
             .credits {
                 font-family: system-ui;
                 font-size: 0.8rem;
                 text-align: center;
                 margin-top: 2rem;
             }
-            
-            /* Color cursors */
+
+            /* Cursor squares back to color blocks for the color words */
             .hong {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FF0000"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(220, 38, 38)"/></svg>') 16 16, auto;
             }
-            
+
             .huang {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFFF00"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(234, 179, 8)"/></svg>') 16 16, auto;
             }
-            
+
             .lan {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%230000FF"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(59, 130, 246)"/></svg>') 16 16, auto;
             }
-            
+
             .lv {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%2300FF00"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(34, 197, 94)"/></svg>') 16 16, auto;
             }
-            
+
             .zi {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23800080"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(147, 51, 234)"/></svg>') 16 16, auto;
             }
-            
+
             .hei {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23000000"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(23, 23, 23)"/></svg>') 16 16, auto;
             }
-            
+
             .bai {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFFFFF" stroke="%23000000" stroke-width="1"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(245, 245, 245)" stroke="rgb(156, 163, 175)"/></svg>') 16 16, auto;
             }
-            
+
             .cheng {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFA500"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(249, 115, 22)"/></svg>') 16 16, auto;
             }
-            
+
             .fen {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFC0CB"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(244, 114, 182)"/></svg>') 16 16, auto;
             }
-            
+
             .hui {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23808080"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(107, 114, 128)"/></svg>') 16 16, auto;
             }
-            
+
             .jin {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23FFD700"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(234, 179, 8)" stroke="rgb(161, 98, 7)"/></svg>') 16 16, auto;
             }
-            
+
             .yin {
-                cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23C0C0C0"/></svg>') 16 16, auto;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" rx="4" ry="4" fill="rgb(229, 231, 235)" stroke="rgb(107, 114, 128)"/></svg>') 16 16, auto;
+            }
+
+            /* Number words use emoji cursors that match the meaning of each number */
+            .yi {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">1️⃣</text></svg>') 16 16, auto;
+            }
+
+            .er {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">2️⃣</text></svg>') 16 16, auto;
+            }
+
+            .san {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">3️⃣</text></svg>') 16 16, auto;
+            }
+
+            .si {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">4️⃣</text></svg>') 16 16, auto;
+            }
+
+            .wu {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">5️⃣</text></svg>') 16 16, auto;
+            }
+
+            .liu {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">6️⃣</text></svg>') 16 16, auto;
+            }
+
+            .qi {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">7️⃣</text></svg>') 16 16, auto;
+            }
+
+            .ba {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">8️⃣</text></svg>') 16 16, auto;
+            }
+
+            .jiu {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">9️⃣</text></svg>') 16 16, auto;
+            }
+
+            .shi {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">🔟</text></svg>') 16 16, auto;
+            }
+
+            /* Direction words show arrow emoji cursors for extra practice */
+            .zuo {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">⬅️</text></svg>') 16 16, auto;
+            }
+
+            .you {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">➡️</text></svg>') 16 16, auto;
+            }
+
+            .shang {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">⬆️</text></svg>') 16 16, auto;
+            }
+
+            .xia {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect width="32" height="32" fill="white"/><text x="16" y="21" font-size="18" text-anchor="middle" dominant-baseline="middle">⬇️</text></svg>') 16 16, auto;
             }
         }
-        
+
         /* general reset and styling - not related to the demo */
         @layer base {
             * {
@@ -120,42 +178,44 @@
     <div class="wrapper">
         <h1 class="title">中文颜色词 - Chinese Color Words</h1>
         <p>
-            在中国传统色彩中，<span class="hong">红色</span>（hóng sè）象征着喜庆和好运。
+            在中国传统色彩中，<span class="hong">红色</span>（hóng sè）象征着喜庆和好运，配上热情的❤️和练习编号1️⃣。
         </p>
         <p>
-            <span class="huang">黄色</span>（huáng sè）在古代是皇帝专用的颜色，代表着权力和尊贵。
+            <span class="huang">黄色</span>（huáng sè）在古代是皇帝专用的颜色，代表着权力和尊贵，同时闪耀着太阳的🌞和练习编号2️⃣。
         </p>
         <p>
-            <span class="lan">蓝色</span>（lán sè）让人联想到广阔的天空和深邃的海洋。
+            <span class="lan">蓝色</span>（lán sè）让人联想到广阔的天空和深邃的海洋，搭配平静的🌊与练习编号3️⃣。
         </p>
         <p>
-            <span class="lv">绿色</span>（lǜ sè）象征着生命、和平与希望。
+            <span class="lv">绿色</span>（lǜ sè）象征着生命、和平与希望，像清新的🌿和练习编号4️⃣。
         </p>
         <p>
-            <span class="zi">紫色</span>（zǐ sè）在中国古代也是贵族的象征，神秘而高贵。
+            <span class="zi">紫色</span>（zǐ sè）在中国古代也是贵族的象征，神秘而高贵，带着梦幻的🪻和练习编号5️⃣。
         </p>
         <p>
-            <span class="hei">黑色</span>（hēi sè）代表着严肃与庄重，也与深沉的夜晚相关。
+            <span class="hei">黑色</span>（hēi sè）代表着严肃与庄重，也与深沉的夜晚相关，配合静谧的🌑和练习编号6️⃣。
         </p>
         <p>
-            <span class="bai">白色</span>（bái sè）在中国传统文化中常与纯洁和悲伤联系在一起。
+            <span class="bai">白色</span>（bái sè）在中国传统文化中常与纯洁和悲伤联系在一起，如柔和的🤍和练习编号7️⃣。
         </p>
         <p>
-            <span class="cheng">橙色</span>（chéng sè）是一种充满活力和温暖的颜色。
+            <span class="cheng">橙色</span>（chéng sè）是一种充满活力和温暖的颜色，像甜美的🍊与练习编号8️⃣。
         </p>
         <p>
-            <span class="fen">粉色</span>（fěn sè）让人感到温柔和浪漫。
+            <span class="fen">粉色</span>（fěn sè）让人感到温柔和浪漫，带着可爱的🌸和练习编号9️⃣。
         </p>
         <p>
-            <span class="hui">灰色</span>（huī sè）是一种中性的颜色，常与平静和沉稳相关。
+            <span class="hui">灰色</span>（huī sè）是一种中性的颜色，常与平静和沉稳相关，搭配安静的🌫️与练习编号🔟。
         </p>
         <p>
-            <span class="jin">金色</span>（jīn sè）象征着财富和繁荣，在中国文化中非常重要。
+            <span class="jin">金色</span>（jīn sè）象征着财富和繁荣，在中国文化中非常重要，闪耀着✨并对应练习编号1️⃣1️⃣。
         </p>
         <p>
-            <span class="yin">银色</span>（yín sè）与月亮的光辉相关，代表着纯净和高雅。
+            <span class="yin">银色</span>（yín sè）与月亮的光辉相关，代表着纯净和高雅，带着明亮的🌙与练习编号1️⃣2️⃣。
         </p>
-        <p class="credits">将鼠标悬停在颜色词上可以看到相应的颜色方块 (Hover over color words to see the corresponding color squares)</p>
+        <p class="credits">将鼠标悬停在颜色词上即可看到彩色方块，数字词上则会浮现对应数字的表情符号。 (Hover over color words to see color squares, and over number words to see matching number emoji.)</p>
+        <p class="credits">数字练习：<span class="yi">一</span>、<span class="er">二</span>、<span class="san">三</span>、<span class="si">四</span>、<span class="wu">五</span>、<span class="liu">六</span>、<span class="qi">七</span>、<span class="ba">八</span>、<span class="jiu">九</span>、<span class="shi">十</span>。</p>
+        <p class="credits">方向练习：<span class="zuo">左</span>（zuǒ，left）、<span class="you">右</span>（yòu，right）、<span class="shang">上</span>（shàng，up）、<span class="xia">下</span>（xià，down）。 鼠标滑过时会出现方向箭头。</p>
     </div>
 </body>
 </html>
